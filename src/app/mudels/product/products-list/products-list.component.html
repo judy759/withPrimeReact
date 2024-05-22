@@ -1,0 +1,54 @@
+<p>products-list works!</p>
+
+
+    <p-button label="Submit" />
+
+    <input pInputText pKeyFilter="int" />
+    <input pInputText pKeyFilter="num" />
+    <input pInputText pKeyFilter="money" />
+    <input pInputText pKeyFilter="hex" />
+    <input pInputText pKeyFilter="alpha" />
+    <input pInputText pKeyFilter="alphanum" />
+    <p-fileUpload 
+    mode="basic" 
+    chooseLabel="Choose" 
+    chooseIcon="pi pi-upload"
+    name="demo[]" 
+    url="https://www.primefaces.org/cdn/api/upload.php" 
+    accept="image/*" 
+    
+    (onUpload)="onUpload($event)" />
+    
+    <p-tabView>
+        <p-tabPanel header="Header I">
+            <p>
+                Lorem ipsum dolor sit amet...
+            </p>
+        </p-tabPanel>
+        <p-tabPanel header="Header II">
+            <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium...
+            </p>
+        </p-tabPanel>
+        <p-tabPanel header="Header III">
+            <p>
+                At vero eos et accusamus et iusto odio dignissimos...
+            </p>
+        </p-tabPanel>
+    </p-tabView>
+
+    <!-- <p-fileUpload 
+    name="demo[]" 
+    url="https://www.primefaces.org/cdn/api/upload.php" 
+    (onUpload)="onUpload($event)" 
+    [multiple]="true" 
+    accept="image/*" 
+    maxFileSize="1000000">
+        <ng-template pTemplate="content">
+            <ul *ngIf="uploadedFiles.length">
+                <li *ngFor="let file of uploadedFiles">
+                    {{ file.name }} - {{ file.size }} bytes
+                </li>
+            </ul>
+        </ng-template>
+</p-fileUpload> -->
